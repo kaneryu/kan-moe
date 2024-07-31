@@ -1,3 +1,4 @@
+
 .body {
   margin: 0;
   padding: 0;
@@ -21,32 +22,80 @@
   flex: 1 0 0;
   align-self: stretch;
 }
-.top .text-kaneryu {}
 .top .text-moe {
   color: rgba(255, 255, 255, 0.25);
 }
 .top span {
   font-size: 96px;
+
+}
+span.letter {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+span.letter.visible {
+  opacity: 1;
 }
 
 .bottom {
-  font-size: 0;
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
-  color: white;
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 98vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+div.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+
+}
+.contact .contactItem {
+  display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  flex: 1 0 0;
-  align-self: stretch;
+}
+.contact .contactText {
+  color: white;
+  font-size: 32px;
+}
+.contact .contant-ghicon {
+  background-image: url('data:image/svg+xml <svg width="1278" height="720" viewBox="0 0 1278 720" fill="none" xmlns="http://www.w3.org/2000/svg">  <rect width="1278" height="720" fill="url(#paint0_linear_1_328)"/>  <defs><linearGradient id="paint0_linear_1_328" x1="639" y1="383" x2="639" y2="1115.5" gradientUnits="userSpaceOnUse"><stop stop-opacity="0"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
 }
 
-.bottom span {
-  color: #fff;
-  font-size: 
+a {
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+}
+
+span.blurb {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.abtme {
+  font-size: 32px;
+  color: white;
 }
