@@ -99,3 +99,20 @@ span.blurb {
   font-size: 32px;
   color: white;
 }
+
+
+.topbgvideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+  border: 0;
+  margin: 0;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
